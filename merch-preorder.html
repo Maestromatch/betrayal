@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BDC MERCH — Polera Manga Larga · Preorder Oficial</title>
+<meta name="description" content="Reserva tu polera manga larga oficial de Betrayal Devours Cowards. Tallas S a XXL. Pago contra entrega. Y entra a ganar una exclusiva del próximo modelo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ─── TOKENS ─────────────────────────────────────────────── */
+:root{
+  --black:#050505; --dark:#0d0d0d; --dark2:#141414; --dark3:#1a1a1a;
+  --red:#cc0000; --red-l:#ff2222; --red-d:#880000;
+  --white:#f0f0f0; --offwhite:#e0e0e0; --gray:#888; --gray-l:#555; --gray-d:#333;
+  --line:rgba(204,0,0,.18); --line2:rgba(255,255,255,.07);
+  --shadow:0 20px 60px rgba(0,0,0,.6); --shadow-red:0 10px 40px rgba(204,0,0,.25);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--black);color:var(--white);line-height:1.6;overflow-x:hidden}
+h1,h2,h3,.brand{font-family:'Bebas Neue',sans-serif;letter-spacing:2px}
+img{max-width:100%;display:block}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+.center{text-align:center}
+
+/* ─── SCROLLBAR ──────────────────────────────────────────── */
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:var(--black)}
+::-webkit-scrollbar-thumb{background:var(--red-d);border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:var(--red)}
+
+/* ─── TOPBAR ─────────────────────────────────────────────── */
+.topbar{background:var(--red-d);color:var(--white);text-align:center;padding:9px 14px;
+  font-size:.82rem;letter-spacing:1px;font-weight:500;position:relative}
+.topbar b{color:#ffcccc}
+.topbar .dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#ff6b6b;
+  animation:blink 1.3s infinite;vertical-align:middle;margin-right:6px}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+
+/* ─── NAV ────────────────────────────────────────────────── */
+nav{position:sticky;top:0;z-index:40;background:rgba(5,5,5,.94);backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+.logo{font-family:'Bebas Neue';font-size:1.55rem;letter-spacing:4px;color:var(--white);text-decoration:none}
+.logo span{color:var(--red)}
+.nav-trust{font-size:.78rem;color:var(--gray);display:flex;gap:14px}
+.nav-trust span{display:flex;align-items:center;gap:4px}
+
+/* ─── BTN ────────────────────────────────────────────────── */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  background:var(--red);color:#fff;border:none;border-radius:4px;
+  padding:16px 32px;font-family:'Bebas Neue';font-size:1.2rem;letter-spacing:2px;
+  cursor:pointer;text-decoration:none;box-shadow:var(--shadow-red);transition:.18s}
+.btn:hover{background:var(--red-l);transform:translateY(-2px);box-shadow:0 16px 44px rgba(204,0,0,.38)}
+.btn.big{width:100%;padding:20px;font-size:1.35rem}
+.btn.ghost{background:transparent;color:var(--red);border:2px solid var(--red);box-shadow:none}
+.btn.ghost:hover{background:var(--red);color:#fff}
+.btn.wsp{background:#25d366;box-shadow:0 10px 30px rgba(37,211,102,.30)}
+.btn.wsp:hover{background:#1ebe5d}
+section{padding:72px 0}
+.eyebrow{text-transform:uppercase;letter-spacing:3px;font-size:.7rem;color:var(--red);font-weight:600;margin-bottom:6px}
+.sub{color:var(--gray);max-width:560px;margin:0 auto 36px;font-size:.97rem}
+.line-red{width:48px;height:3px;background:var(--red);margin:10px auto 0;border-radius:2px}
+
+/* ─── HERO ───────────────────────────────────────────────── */
+.hero{padding:64px 0 72px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(ellipse 70% 60% at 50% 50%,rgba(140,0,0,.10) 0%,transparent 70%)}
+.hero-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:52px;align-items:center}
+.hero-eyebrow{display:inline-block;background:rgba(204,0,0,.15);border:1px solid var(--line);
+  padding:5px 16px;border-radius:3px;font-size:.72rem;letter-spacing:3px;text-transform:uppercase;
+  color:var(--red);margin-bottom:14px;font-weight:600}
+.hero h1{font-size:3.8rem;color:var(--white);line-height:1.05;margin-bottom:12px}
+.hero h1 span{color:var(--red)}
+.hero p.lead{font-size:1.05rem;color:var(--offwhite);line-height:1.7;margin-bottom:22px;opacity:.85}
+.priceline{display:flex;align-items:baseline;gap:12px;margin:18px 0 8px;flex-wrap:wrap}
+.priceline .now{font-family:'Bebas Neue';font-size:2.8rem;color:var(--white);letter-spacing:2px}
+.priceline .tag{background:var(--red);color:#fff;font-size:.72rem;font-weight:700;
+  padding:5px 12px;border-radius:3px;letter-spacing:1px;align-self:center}
+.microtrust{display:flex;gap:16px;flex-wrap:wrap;margin-top:16px;font-size:.83rem;color:var(--gray)}
+.microtrust span{display:flex;align-items:center;gap:5px}
+.hero-img{border-radius:6px;border:1px solid var(--line);overflow:hidden;
+  background:linear-gradient(160deg,var(--dark2),var(--dark3));
+  min-height:460px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:10px;color:var(--gray-l);font-size:.82rem;text-align:center;padding:24px;
+  box-shadow:0 24px 60px rgba(0,0,0,.7),inset 0 0 60px rgba(204,0,0,.04)}
+.hero-img .ic-ph{font-size:3rem;opacity:.3;margin-bottom:6px}
+
+/* ─── STRIP ──────────────────────────────────────────────── */
+.strip{background:var(--red-d);border-top:1px solid rgba(255,255,255,.06);
+  border-bottom:1px solid rgba(255,255,255,.06)}
+.strip .wrap{display:flex;justify-content:space-around;flex-wrap:wrap;gap:14px;
+  padding:22px 20px;text-align:center}
+.strip .it{font-size:.85rem;display:flex;flex-direction:column;gap:3px;min-width:110px;align-items:center}
+.strip .it b{font-family:'Bebas Neue';font-size:1.05rem;color:var(--offwhite);letter-spacing:1px}
+
+/* ─── CONCURSO ───────────────────────────────────────────── */
+.contest{background:var(--dark)}
+.contest-box{background:linear-gradient(135deg,var(--dark2),var(--dark3));
+  border:1px solid var(--line);border-radius:6px;padding:44px 36px;max-width:800px;margin:0 auto;
+  position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.contest-box::before{content:'';position:absolute;top:-40px;right:-40px;width:200px;height:200px;
+  border-radius:50%;background:rgba(204,0,0,.06);pointer-events:none}
+.contest-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(204,0,0,.18);
+  border:1px solid rgba(204,0,0,.4);padding:8px 18px;border-radius:3px;margin-bottom:20px;
+  font-size:.78rem;letter-spacing:2px;text-transform:uppercase;color:#ff9999;font-weight:600}
+.contest-box h2{font-size:2.8rem;color:var(--white);margin-bottom:12px;line-height:1.1}
+.contest-box h2 span{color:var(--red)}
+.contest-box .desc{color:var(--offwhite);opacity:.8;margin-bottom:28px;font-size:.97rem;line-height:1.7}
+.prize-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:28px 0}
+.prize{background:rgba(255,255,255,.04);border:1px solid var(--line2);border-radius:6px;
+  padding:22px 16px;text-align:center;transition:.18s}
+.prize:hover{border-color:rgba(204,0,0,.3);background:rgba(204,0,0,.05)}
+.prize .ic{font-size:2rem;margin-bottom:10px}
+.prize h4{font-family:'Bebas Neue';font-size:1.15rem;color:var(--white);letter-spacing:1px;margin-bottom:4px}
+.prize p{font-size:.83rem;color:var(--gray);line-height:1.5}
+.contest-rule{background:rgba(255,255,255,.03);border-left:3px solid var(--red);
+  padding:14px 18px;border-radius:0 6px 6px 0;margin-top:8px;font-size:.88rem;
+  color:var(--offwhite);opacity:.75;line-height:1.6}
+
+/* ─── PRODUCTO ───────────────────────────────────────────── */
+.product{background:var(--black)}
+.prod-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start}
+.prod-imgs{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.prod-img{border-radius:6px;overflow:hidden;background:var(--dark2);border:1px solid var(--line2);
+  min-height:200px;display:flex;align-items:center;justify-content:center;
+  color:var(--gray-l);font-size:.78rem;text-align:center;padding:16px}
+.prod-img.main{grid-column:span 2;min-height:300px}
+.prod-info h2{font-size:2.6rem;line-height:1.1;margin-bottom:8px}
+.prod-info h2 span{color:var(--red)}
+.prod-features{list-style:none;margin:20px 0;display:flex;flex-direction:column;gap:10px}
+.prod-features li{display:flex;align-items:flex-start;gap:10px;font-size:.95rem;color:var(--offwhite);opacity:.85}
+.prod-features li::before{content:'▸';color:var(--red);flex-shrink:0;margin-top:2px}
+
+/* TALLAS */
+.sizes-section{margin:24px 0}
+.sizes-title{font-size:.82rem;font-weight:600;text-transform:uppercase;letter-spacing:2px;
+  color:var(--gray);margin-bottom:10px}
+.sizes{display:flex;gap:8px;flex-wrap:wrap}
+.size{padding:9px 16px;border:1.5px solid var(--gray-d);border-radius:3px;font-family:'Bebas Neue';
+  font-size:1.1rem;letter-spacing:1px;color:var(--white);cursor:default;transition:.15s}
+.size:hover{border-color:var(--red);color:var(--red)}
+.size.xs{background:rgba(204,0,0,.08);border-color:rgba(204,0,0,.3);color:#ff9999;font-size:.75rem;
+  font-family:'Inter';font-weight:600;letter-spacing:.5px;padding:5px 12px;margin-left:4px}
+
+/* ─── STEPS ──────────────────────────────────────────────── */
+.steps-sec{background:var(--dark)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;max-width:840px;margin:0 auto;position:relative}
+.steps::before{content:'';position:absolute;top:25px;left:16%;right:16%;height:1px;
+  background:linear-gradient(90deg,var(--red),transparent,var(--red));opacity:.4;z-index:0}
+.step{text-align:center;position:relative;z-index:1}
+.step .n{width:50px;height:50px;border-radius:3px;background:var(--red);color:#fff;
+  font-family:'Bebas Neue';font-size:1.6rem;display:flex;align-items:center;justify-content:center;
+  margin:0 auto 14px;box-shadow:var(--shadow-red)}
+.step h3{font-size:1.25rem;color:var(--white);margin-bottom:6px}
+.step p{color:var(--gray);font-size:.88rem}
+
+/* ─── URGENCY ────────────────────────────────────────────── */
+.urgency{background:linear-gradient(135deg,#0d0d0d,#1a0000);text-align:center;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.urgency h2{color:var(--white);font-size:2.6rem;margin-bottom:8px}
+.urgency .sub{color:var(--gray);margin-bottom:28px}
+.urg-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:560px;margin:0 auto 28px}
+.urg-box{background:rgba(255,255,255,.04);border-radius:6px;padding:22px;
+  border:1px solid var(--line2)}
+.urg-box .val{font-family:'Bebas Neue';font-size:2.4rem;color:var(--red);line-height:1;letter-spacing:2px}
+.urg-box .lbl{font-size:.82rem;color:var(--gray);margin-top:4px;letter-spacing:1px}
+.stock-bar{background:rgba(255,255,255,.08);border-radius:2px;height:8px;max-width:380px;margin:0 auto 8px}
+.stock-fill{background:linear-gradient(90deg,var(--red-d),var(--red));height:8px;border-radius:2px;transition:width .8s}
+
+/* ─── OFFER BOX ──────────────────────────────────────────── */
+.offer{background:var(--black);text-align:center}
+.offerbox{background:linear-gradient(160deg,var(--dark2),var(--dark3));border-radius:6px;
+  padding:44px 32px;max-width:560px;margin:0 auto;
+  box-shadow:0 24px 60px rgba(0,0,0,.6),0 0 0 1px var(--line);
+  border:1px solid var(--line)}
+.offerbox .now{font-family:'Bebas Neue';font-size:3.4rem;color:var(--white);line-height:1;letter-spacing:3px}
+.offerbox .sub-price{font-size:.82rem;color:var(--gray);margin-bottom:8px;letter-spacing:1px}
+.badges{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:16px 0 24px}
+.badges span{background:rgba(255,255,255,.06);color:var(--offwhite);font-size:.8rem;
+  padding:6px 14px;border-radius:3px;border:1px solid var(--line2);font-weight:500}
+
+/* ─── FAQ ────────────────────────────────────────────────── */
+.faq-sec{background:var(--dark)}
+details{background:rgba(255,255,255,.03);border:1px solid var(--line2);border-radius:4px;
+  padding:2px 22px;margin-bottom:10px;transition:.15s}
+details:hover{border-color:rgba(204,0,0,.25)}
+summary{font-family:'Inter';font-weight:600;color:var(--white);padding:18px 0;cursor:pointer;
+  list-style:none;display:flex;justify-content:space-between;align-items:center;font-size:.97rem}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';color:var(--red);font-size:1.5rem;font-weight:300;flex-shrink:0}
+details[open] summary::after{content:'−'}
+details p{padding:0 0 18px;color:var(--gray);line-height:1.7;font-size:.93rem}
+
+/* ─── FOOTER ─────────────────────────────────────────────── */
+footer{background:#000;border-top:1px solid var(--line);color:var(--gray);
+  padding:40px 20px;text-align:center;font-size:.83rem}
+footer .brand-f{font-family:'Bebas Neue';font-size:1.6rem;letter-spacing:4px;color:var(--white);margin-bottom:4px}
+footer .brand-f span{color:var(--red)}
+footer a{color:var(--gray);text-decoration:none;margin:0 8px}
+footer a:hover{color:var(--red)}
+footer p{margin-top:8px;opacity:.6;font-size:.78rem}
+
+/* ─── STICKY BAR ─────────────────────────────────────────── */
+.sticky{position:fixed;bottom:0;left:0;right:0;background:rgba(5,5,5,.96);
+  border-top:1px solid var(--line);backdrop-filter:blur(10px);
+  box-shadow:0 -8px 30px rgba(0,0,0,.5);padding:12px 18px;z-index:50;
+  display:flex;gap:12px;align-items:center;transform:translateY(100%);transition:.3s}
+.sticky.visible{transform:translateY(0)}
+.sticky-info{flex:1;min-width:0}
+.sticky-info .sp{font-family:'Bebas Neue';color:var(--white);font-size:1.25rem;letter-spacing:2px}
+.sticky-info .sl{font-size:.72rem;color:var(--gray)}
+.sticky .btn{flex-shrink:0;padding:12px 22px;font-size:1.05rem}
+.spacer{height:72px}
+
+/* ─── EXIT INTENT ────────────────────────────────────────── */
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:200;display:none;
+  align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(4px)}
+.overlay.show{display:flex}
+.popup{background:var(--dark2);border:1px solid var(--line);border-radius:8px;
+  max-width:460px;width:100%;overflow:hidden;box-shadow:0 32px 80px rgba(0,0,0,.7);
+  animation:popIn .3s cubic-bezier(.34,1.56,.64,1)}
+@keyframes popIn{from{opacity:0;transform:scale(.88) translateY(20px)}to{opacity:1;transform:scale(1)translateY(0)}}
+.popup-header{background:linear-gradient(135deg,var(--red-d),#1a0000);padding:28px 28px 20px;
+  text-align:center;position:relative;border-bottom:1px solid var(--line)}
+.popup-header h3{font-family:'Bebas Neue';color:var(--white);font-size:1.9rem;letter-spacing:2px;margin-bottom:4px}
+.popup-header p{color:rgba(240,240,240,.7);font-size:.9rem}
+.popup-close{position:absolute;top:12px;right:14px;background:rgba(255,255,255,.1);border:none;
+  color:var(--white);width:28px;height:28px;border-radius:50%;cursor:pointer;font-size:1rem;
+  display:flex;align-items:center;justify-content:center}
+.popup-body{padding:28px}
+.popup-offer{background:rgba(204,0,0,.1);border-radius:4px;padding:16px;
+  text-align:center;margin-bottom:18px;border:1px solid var(--line)}
+.popup-offer .big{font-family:'Bebas Neue';font-size:2rem;color:var(--white);
+  display:block;margin:6px 0;letter-spacing:2px}
+.popup-offer .small{font-size:.83rem;color:var(--gray)}
+
+/* ─── FOMO TOAST ──────────────────────────────────────────── */
+.fomo{position:fixed;bottom:88px;left:16px;z-index:100;background:var(--dark2);border-radius:6px;
+  padding:12px 16px;box-shadow:0 8px 28px rgba(0,0,0,.5);border-left:3px solid var(--red);
+  max-width:270px;display:flex;gap:10px;align-items:center;
+  transform:translateX(-320px);transition:.5s cubic-bezier(.34,1.1,.64,1);pointer-events:none}
+.fomo.show{transform:translateX(0)}
+.fomo .fav{width:34px;height:34px;border-radius:3px;background:var(--red-d);
+  color:var(--white);display:flex;align-items:center;justify-content:center;font-size:.85rem;flex-shrink:0}
+.fomo .ft{font-size:.78rem;line-height:1.45;color:var(--offwhite)}
+.fomo .ft b{color:var(--white)}
+.fomo .ft .tm{color:var(--gray);font-size:.72rem}
+
+/* ─── RESPONSIVE ─────────────────────────────────────────── */
+@media(max-width:780px){
+  .hero-grid,.prod-grid,[style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr !important}
+  .hero-img{order:-1;min-height:280px}
+  .prod-imgs{order:-1}
+  .hero h1{font-size:2.8rem}
+  .prize-grid,.steps{grid-template-columns:1fr}
+  .urg-grid{grid-template-columns:1fr}
+  .steps::before{display:none}
+  .nav-trust{display:none}
+  .prod-imgs{grid-template-columns:1fr}
+  .prod-img.main{grid-column:span 1}
+}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <span class="dot"></span>
+  PREORDER ABIERTO &nbsp;·&nbsp; <b>Unidades limitadas primera tirada</b> &nbsp;·&nbsp; Pago SOLO contra entrega
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="wrap">
+    <a href="#" class="logo">BETRAYAL <span>DEVOURS</span> COWARDS</a>
+    <div class="nav-trust">
+      <span>🎸 Deathcore · Santiago</span>
+      <span>📦 Contra entrega</span>
+      <span>🔥 Primera tirada</span>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <div class="hero-eyebrow">⚡ PREORDER OFICIAL · PRIMERA TIRADA</div>
+        <h1>POLERA<br>MANGA<br><span>LARGA BDC</span></h1>
+        <p class="lead">La primera remesa oficial de Betrayal Devours Cowards ya está en preorder. Tallas S a XXL — diseño brutal, calidad real. Pago <strong>solo contra entrega</strong>, sin riesgo.</p>
+        <div class="priceline">
+          <span class="now">$24.990</span>
+          <span class="tag">PREORDER · CONTRA ENTREGA</span>
+        </div>
+        <a href="https://wa.me/56999104857?text=Quiero%20reservar%20mi%20polera%20manga%20larga%20BDC%20🤘"
+           class="btn wsp big" id="cta-hero">
+          🤘 RESERVAR POR WHATSAPP
+        </a>
+        <div class="microtrust">
+          <span>✅ Pago contra entrega</span>
+          <span>📦 Despacho a todo Chile</span>
+          <span>🎟️ Entras al concurso automático</span>
+        </div>
+      </div>
+      <div class="hero-img" id="img-hero" style="padding:0;min-height:460px;background:#000">
+        <img src="1000330252.jpg" alt="Polera manga larga BDC — frente y reverso"
+             style="width:100%;height:100%;object-fit:cover;border-radius:6px;display:block">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STRIP DE CONFIANZA -->
+<div class="strip">
+  <div class="wrap">
+    <div class="it"><b>S · M · L · XL · XXL</b><span>Todas las tallas</span></div>
+    <div class="it"><b>CONTRA ENTREGA</b><span>Pagas al recibir</span></div>
+    <div class="it"><b>PRIMERA TIRADA</b><span>Stock limitado</span></div>
+    <div class="it"><b>MERCH OFICIAL</b><span>Diseño exclusivo BDC</span></div>
+  </div>
+</div>
+
+<!-- CONCURSO -->
+<section class="contest" id="concurso">
+  <div class="wrap center">
+    <div class="eyebrow">Para todos los que reserven</div>
+    <h2 class="sec" style="color:var(--white)">EL CONCURSO</h2>
+    <div class="line-red"></div>
+    <br>
+    <div class="contest-box">
+      <div class="contest-badge">🏆 EXCLUSIVO PARA PREORDERS</div>
+      <h2>RESERVA Y ENTRA A<br><span>GANAR EL NUEVO</span><br>MODELO</h2>
+      <p class="desc">Cada reserva que hagas cuenta como una participación. Un ganador se lleva el pack más brutal: su polera manga larga + el primer modelo exclusivo del próximo diseño — el único en tenerlo antes que nadie.</p>
+
+      <div class="prize-grid">
+        <div class="prize">
+          <div class="ic">👕</div>
+          <h4>TU POLERA</h4>
+          <p>La manga larga que ya reservaste, tuya sí o sí</p>
+        </div>
+        <div class="prize">
+          <div class="ic">🔥</div>
+          <h4>DISEÑO EXCLUSIVO</h4>
+          <p>El nuevo modelo — el ganador es el PRIMERO en tenerlo</p>
+        </div>
+        <div class="prize">
+          <div class="ic">⚡</div>
+          <h4>2 POLERAS</h4>
+          <p>El ganador recibe la manga larga + la exclusiva = 2 en total</p>
+        </div>
+      </div>
+
+      <div class="contest-rule">
+        🎟️ <strong>¿Cómo participar?</strong> — Solo reserva tu polera por WhatsApp. Todos los que confirmen su preorder antes del cierre entran automáticamente al sorteo. Sin costo adicional, sin condiciones extra. El ganador se anuncia por IG cuando el pedido llegue a Chile.
+      </div>
+
+      <br>
+      <a href="https://wa.me/56999104857?text=Quiero%20reservar%20y%20participar%20en%20el%20concurso%20BDC%20🤘"
+         class="btn" id="cta-contest">
+        🤘 RESERVAR Y PARTICIPAR
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTO DETALLE -->
+<section class="product" id="producto">
+  <div class="wrap">
+    <div class="prod-grid">
+      <div class="prod-imgs">
+        <div class="prod-img main" style="padding:0;background:#000">
+          <img src="1000330250.jpg" alt="Polera manga larga BDC — vista frontal"
+               style="width:100%;height:100%;object-fit:cover;border-radius:6px;display:block">
+        </div>
+        <div class="prod-img" style="padding:0;background:#000">
+          <img src="1000330251.jpg" alt="Polera manga larga BDC — vista trasera"
+               style="width:100%;height:100%;object-fit:cover;border-radius:6px;display:block">
+        </div>
+        <div class="prod-img" style="padding:0;background:#000">
+          <img src="1000330249.jpg" alt="Arte oficial BDC"
+               style="width:100%;height:100%;object-fit:cover;border-radius:6px;display:block">
+        </div>
+      </div>
+      <div class="prod-info">
+        <div class="eyebrow">Modelo 01 — Primera Tirada</div>
+        <h2>POLERA<br>MANGA LARGA<br><span>OFICIAL</span></h2>
+        <ul class="prod-features">
+          <li>Manga larga — diseño gráfico brutal, tinta de alta durabilidad</li>
+          <li>Material de calidad, cómodo para el pogo y el día a día</li>
+          <li>Color base negro, gráfica en rojo y blanco</li>
+          <li>Disponible en todas las tallas: S, M, L, XL, XXL</li>
+          <li>Producción en Chile — primera tirada limitada</li>
+          <li>Con cada reserva entras automáticamente al concurso</li>
+        </ul>
+
+        <div class="sizes-section">
+          <div class="sizes-title">Tallas disponibles</div>
+          <div class="sizes">
+            <div class="size">S</div>
+            <div class="size">M</div>
+            <div class="size">L</div>
+            <div class="size">XL</div>
+            <div class="size">XXL</div>
+            <div class="size xs">Consulta guía de tallas por WSP</div>
+          </div>
+        </div>
+
+        <br>
+        <a href="https://wa.me/56999104857?text=Hola!%20quiero%20reservar%20una%20polera%20manga%20larga%20BDC%20talla%20"
+           class="btn wsp big" id="cta-product">
+          🤘 RESERVAR MI TALLA
+        </a>
+        <div class="microtrust" style="margin-top:14px">
+          <span>💳 Pagas al recibir</span>
+          <span>🎟️ Concurso incluido</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PASOS -->
+<section class="steps-sec">
+  <div class="wrap center">
+    <div class="eyebrow">Así de simple</div>
+    <h2 class="sec" style="color:var(--white)">¿CÓMO FUNCIONA EL PREORDER?</h2>
+    <div class="line-red"></div>
+    <br><br>
+    <div class="steps">
+      <div class="step">
+        <div class="n">1</div>
+        <h3>RESERVAS POR WSP</h3>
+        <p>Escríbele al líder de la banda, indicas tu talla y confirmas tu reserva</p>
+      </div>
+      <div class="step">
+        <div class="n">2</div>
+        <h3>PAGAS AL RECIBIR</h3>
+        <p>Contra entrega — no adelantas nada. Pagas cuando la polera llega a tu puerta</p>
+      </div>
+      <div class="step">
+        <div class="n">3</div>
+        <h3>ENTRAS AL SORTEO</h3>
+        <p>Automáticamente participas en el concurso por la polera exclusiva del nuevo modelo</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODELO 02 — POLERA DEL CONCURSO -->
+<section style="background:var(--dark);padding:72px 0;border-top:1px solid var(--line)">
+  <div class="wrap">
+
+    <!-- Logo decorativo -->
+    <div class="center" style="margin-bottom:48px">
+      <img src="1000330249.jpg" alt="Betrayal Devours Cowards — Arte oficial"
+           style="max-width:220px;width:100%;margin:0 auto;opacity:.85;border-radius:4px">
+    </div>
+
+    <div class="center" style="margin-bottom:40px">
+      <div class="eyebrow">También en preorder</div>
+      <h2 class="sec" style="color:var(--white);font-size:2.4rem">MODELO 02<br><span style="color:var(--red)">EL PREMIO DEL CONCURSO</span></h2>
+      <div class="line-red"></div>
+      <p style="color:var(--gray);max-width:560px;margin:16px auto 0;font-size:.95rem;line-height:1.7">
+        Esta es la polera que el ganador del sorteo recibirá como exclusiva — el primero en tenerla. Y si no quieres esperar al concurso, también puedes reservarla directamente en preorder.
+      </p>
+    </div>
+
+    <div class="prod-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start">
+      <div class="prod-imgs" style="display:grid;grid-template-columns:1fr;gap:12px">
+        <div style="border-radius:6px;overflow:hidden;border:1px solid var(--line);background:#000">
+          <img src="model2.png" alt="Modelo 02 — Polera BDC preorder vista frontal"
+               style="width:100%;display:block;object-fit:cover">
+        </div>
+        <div style="border-radius:6px;overflow:hidden;border:1px solid var(--line);background:#000">
+          <img src="model 22.png" alt="Modelo 02 — Polera BDC preorder vista trasera"
+               style="width:100%;display:block;object-fit:cover">
+        </div>
+      </div>
+      <div class="prod-info">
+        <div class="eyebrow">Preorder Modelo 02</div>
+        <h2 style="font-size:2.4rem;margin-bottom:8px">POLERA<br><span style="color:var(--red)">PREORDER</span></h2>
+
+        <!-- PRECIO -->
+        <div style="display:flex;align-items:baseline;gap:12px;margin:14px 0 6px;flex-wrap:wrap">
+          <span style="font-family:'Bebas Neue';font-size:2.6rem;color:var(--white);letter-spacing:2px">$19.990</span>
+          <span style="background:var(--red);color:#fff;font-size:.7rem;font-weight:700;padding:5px 12px;border-radius:3px;letter-spacing:1px">PREORDER · CONTRA ENTREGA</span>
+        </div>
+
+        <ul class="prod-features" style="margin:18px 0">
+          <li>Diseño exclusivo Modelo 02 — aún no disponible al público</li>
+          <li>El ganador del concurso la recibe GRATIS como parte del premio</li>
+          <li>Todos pueden reservarla igual — también es preorder abierto</li>
+          <li>Manga larga, base negra, diseño en rojo y blanco</li>
+          <li>Tallas S a XXL — consulta guía por WhatsApp</li>
+        </ul>
+
+        <div style="background:rgba(204,0,0,.1);border:1px solid rgba(204,0,0,.25);border-radius:4px;padding:14px 16px;margin-bottom:20px;font-size:.88rem;color:var(--offwhite);line-height:1.6">
+          🏆 <strong>Premio del concurso:</strong> El ganador del sorteo se lleva su Modelo 01 ($24.990) + esta Modelo 02 ($19.990) totalmente <strong>gratis</strong> — 2 poleras, precio 0.
+        </div>
+
+        <div class="sizes-section" style="margin-bottom:20px">
+          <div class="sizes-title" style="font-size:.82rem;font-weight:600;text-transform:uppercase;letter-spacing:2px;color:var(--gray);margin-bottom:10px">Tallas disponibles</div>
+          <div class="sizes" style="display:flex;gap:8px;flex-wrap:wrap">
+            <div class="size">S</div>
+            <div class="size">M</div>
+            <div class="size">L</div>
+            <div class="size">XL</div>
+            <div class="size">XXL</div>
+          </div>
+        </div>
+
+        <a href="https://wa.me/56999104857?text=Hola!%20quiero%20reservar%20el%20Modelo%2002%20BDC%20($19.990)%20talla%20"
+           class="btn wsp big" id="cta-modelo2" style="width:100%;text-align:center">
+          🤘 RESERVAR MODELO 02 — $19.990
+        </a>
+        <div class="microtrust" style="margin-top:12px;display:flex;gap:16px;flex-wrap:wrap;font-size:.83rem;color:var(--gray)">
+          <span>💳 Pagas al recibir</span>
+          <span>🏆 Es el premio del sorteo</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- URGENCIA -->
+<section class="urgency">
+  <div class="wrap">
+    <div class="eyebrow">Stock limitado</div>
+    <h2>PRIMERA TIRADA —<br>CUPOS LIMITADOS</h2>
+    <p class="sub">Producimos según las reservas. Cuando se cierra el preorder, se cierra. No habrá segunda oportunidad para este modelo.</p>
+    <div class="urg-grid">
+      <div class="urg-box">
+        <div class="val" id="cnt-reservas">–</div>
+        <div class="lbl">RESERVAS CONFIRMADAS</div>
+      </div>
+      <div class="urg-box">
+        <div class="val" id="cnt-dias">–</div>
+        <div class="lbl">DÍAS PARA EL CIERRE</div>
+      </div>
+    </div>
+    <div class="stock-bar"><div class="stock-fill" id="stock-fill" style="width:0%"></div></div>
+    <p style="font-size:.82rem;color:rgba(240,240,240,.5);margin-bottom:28px">Capacidad de primera tirada casi cubierta</p>
+    <a href="https://wa.me/56999104857?text=Quiero%20reservar%20mi%20polera%20BDC%20antes%20de%20que%20se%20cierre%20🤘"
+       class="btn" id="cta-urgency">
+      🔥 RESERVAR ANTES DEL CIERRE
+    </a>
+  </div>
+</section>
+
+<!-- OFFER BOX -->
+<section class="offer" id="reservar">
+  <div class="wrap">
+    <div class="offerbox">
+      <div class="eyebrow center">PREORDER OFICIAL — 2 MODELOS DISPONIBLES</div>
+
+      <!-- Producto 1 -->
+      <div style="background:rgba(255,255,255,.04);border:1px solid var(--line2);border-radius:6px;padding:20px;margin-bottom:14px;text-align:left;display:flex;gap:16px;align-items:center">
+        <img src="1000330250.jpg" alt="Modelo 01"
+             style="width:70px;height:70px;object-fit:cover;border-radius:4px;flex-shrink:0;border:1px solid var(--line)">
+        <div style="flex:1">
+          <div style="font-family:'Bebas Neue';font-size:1.1rem;letter-spacing:1px;color:var(--white)">MODELO 01 — MANGA LARGA</div>
+          <div style="font-size:.82rem;color:var(--gray);margin:2px 0 6px">Frente + mangas · S a XXL</div>
+          <div style="font-family:'Bebas Neue';font-size:1.6rem;color:var(--white);letter-spacing:2px">$24.990</div>
+        </div>
+        <span style="background:var(--red);color:#fff;font-size:.65rem;font-weight:700;padding:4px 10px;border-radius:3px;letter-spacing:1px;flex-shrink:0">PREORDER</span>
+      </div>
+
+      <!-- Producto 2 -->
+      <div style="background:rgba(204,0,0,.08);border:1px solid rgba(204,0,0,.25);border-radius:6px;padding:20px;margin-bottom:20px;text-align:left;display:flex;gap:16px;align-items:center">
+        <img src="1000330253.jpg" alt="Modelo 02"
+             style="width:70px;height:70px;object-fit:cover;border-radius:4px;flex-shrink:0;border:1px solid rgba(204,0,0,.3)">
+        <div style="flex:1">
+          <div style="font-family:'Bebas Neue';font-size:1.1rem;letter-spacing:1px;color:var(--white)">MODELO 02 — PREMIO DEL CONCURSO</div>
+          <div style="font-size:.82rem;color:var(--gray);margin:2px 0 6px">También disponible en preorder · S a XXL</div>
+          <div style="font-family:'Bebas Neue';font-size:1.6rem;color:var(--red);letter-spacing:2px">$19.990</div>
+        </div>
+        <span style="background:var(--red-d);color:#ffcccc;font-size:.65rem;font-weight:700;padding:4px 10px;border-radius:3px;letter-spacing:1px;flex-shrink:0">🏆 PREMIO</span>
+      </div>
+
+      <div class="badges">
+        <span>👕 S · M · L · XL · XXL</span>
+        <span>📦 Contra entrega</span>
+        <span>🎟️ Entra al concurso</span>
+      </div>
+      <a href="https://wa.me/56999104857?text=Hola!%20Quiero%20reservar%20mi%20polera%20BDC%20🤘%20(indica%20modelo%20y%20talla)"
+         class="btn wsp big" id="cta-offer">
+        🤘 RESERVAR POR WHATSAPP
+      </a>
+      <p style="font-size:.8rem;color:var(--gray);margin-top:14px;line-height:1.6">
+        Indica qué modelo quieres y tu talla. Al reservar el Modelo 01 entras automáticamente al concurso por el Modelo 02.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-sec">
+  <div class="wrap">
+    <div class="center">
+      <div class="eyebrow">Dudas frecuentes</div>
+      <h2 class="sec" style="color:var(--white)">FAQ</h2>
+      <div class="line-red"></div>
+    </div>
+    <br><br>
+    <div style="max-width:680px;margin:0 auto">
+      <details>
+        <summary>¿Cómo hago el preorder?</summary>
+        <p>Escríbenos por WhatsApp al número del líder de la banda, indícanos tu talla (S, M, L, XL o XXL) y listo. Te confirmamos la reserva y te avisamos cuando la polera esté lista para despacho.</p>
+      </details>
+      <details>
+        <summary>¿Cuándo pago?</summary>
+        <p>El pago es <strong>contra entrega</strong> — no adelantas nada. Pagas cuando el mensajero o el courier te entrega la polera en tu dirección. 100% sin riesgo.</p>
+      </details>
+      <details>
+        <summary>¿Cómo funciona el concurso?</summary>
+        <p>Todos los que confirmen su preorder quedan inscritos automáticamente. No hay costo adicional ni condición extra. Un ganador al azar se lleva las 2 poleras: su manga larga reservada + la polera exclusiva del nuevo modelo (el primero en tenerla). Anunciamos el ganador por Instagram cuando llegue el pedido.</p>
+      </details>
+      <details>
+        <summary>¿Hay guía de tallas?</summary>
+        <p>Sí. Al escribirnos por WhatsApp te enviamos la tabla de medidas exacta (hombros, pecho, largo de manga) para que elijas tu talla con seguridad.</p>
+      </details>
+      <details>
+        <summary>¿Despachan a todo Chile?</summary>
+        <p>Sí, despachamos a todo Chile mediante courier con seguimiento. El costo de envío se coordina al momento de la reserva según tu región.</p>
+      </details>
+      <details>
+        <summary>¿Puedo cambiar la talla después de reservar?</summary>
+        <p>Sí, mientras el preorder esté abierto. Escríbenos y te hacemos el cambio sin problema. Una vez cerrado el pedido al proveedor no es posible modificarlo.</p>
+      </details>
+      <details>
+        <summary>¿Cuándo llega la polera?</summary>
+        <p>Te informamos la fecha estimada por WhatsApp al confirmar tu reserva. Dependemos de la producción de la primera tirada — por eso el preorder.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- SPACER STICKY -->
+<div class="spacer"></div>
+
+<!-- STICKY BAR -->
+<div class="sticky" id="sticky">
+  <div class="sticky-info">
+    <div class="sp">BDC MERCH — PREORDER</div>
+    <div class="sl">Modelo 01 $24.990 · Modelo 02 $19.990 · Contra entrega</div>
+  </div>
+  <a href="https://wa.me/56999104857?text=Quiero%20reservar%20mi%20polera%20BDC%20🤘"
+     class="btn wsp" id="cta-sticky">🤘 RESERVAR</a>
+</div>
+
+<!-- EXIT INTENT POPUP -->
+<div class="overlay" id="exitOverlay">
+  <div class="popup">
+    <div class="popup-header">
+      <button class="popup-close" onclick="closePopup()">✕</button>
+      <h3>¡ESPERA UN SEGUNDO!</h3>
+      <p>El preorder se cierra cuando se completen los cupos</p>
+    </div>
+    <div class="popup-body">
+      <div class="popup-offer">
+        <span class="small">Si te vas sin reservar, pierdes la chance de entrar al concurso</span>
+        <span class="big">🎟️ TU PARTICIPACIÓN<br>ES GRATIS</span>
+        <span class="small">Solo por reservar tu polera ya entras a ganar la exclusiva</span>
+      </div>
+      <a href="https://wa.me/56999104857?text=Quiero%20reservar%20mi%20polera%20BDC%20🤘"
+         class="btn wsp big" onclick="closePopup()" id="cta-popup">
+        🤘 RESERVAR AHORA
+      </a>
+      <p style="text-align:center;margin-top:12px;font-size:.78rem;color:var(--gray);cursor:pointer"
+         onclick="closePopup()">No, prefiero perder el concurso →</p>
+    </div>
+  </div>
+</div>
+
+<!-- FOMO TOAST -->
+<div class="fomo" id="fomo">
+  <div class="fav">🤘</div>
+  <div class="ft">
+    <b id="fomo-name">Alguien de Santiago</b> reservó recién<br>
+    <span class="tm" id="fomo-time">hace 3 min</span>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="brand-f">BETRAYAL <span>DEVOURS</span> COWARDS</div>
+  <p>Deathcore / Breakdown · Santiago Sur, Chile · Desde 2010</p>
+  <br>
+  <a href="https://wa.me/56999104857">WhatsApp</a>
+  <a href="https://instagram.com/betrayaldevourscowards" target="_blank">Instagram</a>
+  <br>
+  <p>© 2026 Betrayal Devours Cowards · Merch oficial · Preorder primera tirada</p>
+</footer>
+
+<script>
+/* ─── STICKY ──────────────────────────────────────────────── */
+const sticky=document.getElementById('sticky');
+window.addEventListener('scroll',()=>{
+  sticky.classList.toggle('visible',window.scrollY>380);
+},{ passive:true });
+
+/* ─── COUNTDOWN DÍAS ──────────────────────────────────────── */
+// Ajusta la fecha de cierre del preorder aquí:
+const CLOSE_DATE = new Date('2026-07-15T23:59:59');
+function updateCountdown(){
+  const now=new Date();
+  const diff=CLOSE_DATE-now;
+  if(diff<=0){
+    document.getElementById('cnt-dias').textContent='0';
+    return;
+  }
+  const days=Math.floor(diff/(1000*60*60*24));
+  document.getElementById('cnt-dias').textContent=days;
+}
+updateCountdown();
+setInterval(updateCountdown,60000);
+
+/* ─── RESERVAS COUNTER (placeholder) ────────────────────── */
+// Reemplaza con número real de reservas recibidas
+const BASE_RESERVAS = 14;
+document.getElementById('cnt-reservas').textContent = BASE_RESERVAS;
+document.getElementById('stock-fill').style.width = Math.min((BASE_RESERVAS/50)*100,92)+'%';
+
+/* ─── EXIT INTENT ─────────────────────────────────────────── */
+let popupShown=false;
+document.addEventListener('mouseleave',(e)=>{
+  if(e.clientY<0 && !popupShown){
+    popupShown=true;
+    document.getElementById('exitOverlay').classList.add('show');
+  }
+});
+function closePopup(){document.getElementById('exitOverlay').classList.remove('show')}
+document.getElementById('exitOverlay').addEventListener('click',(e)=>{
+  if(e.target===document.getElementById('exitOverlay')) closePopup();
+});
+
+/* ─── FOMO TOASTS ─────────────────────────────────────────── */
+const fomoNames=[
+  'Alguien de Santiago Centro','Uno de La Florida','Un fan de Maipú',
+  'Alguien de San Bernardo','Un headbanger de Pudahuel','Uno de Puente Alto',
+  'Alguien de Concepción','Un fan de Valparaíso','Uno de Rancagua'
+];
+const fomoTimes=['hace 2 min','hace 5 min','hace 8 min','hace 12 min','recién'];
+let fomoIdx=0;
+function showFomo(){
+  const el=document.getElementById('fomo');
+  document.getElementById('fomo-name').textContent=fomoNames[fomoIdx%fomoNames.length];
+  document.getElementById('fomo-time').textContent=fomoTimes[Math.floor(Math.random()*fomoTimes.length)];
+  el.classList.add('show');
+  fomoIdx++;
+  setTimeout(()=>el.classList.remove('show'),3800);
+}
+setTimeout(()=>{ showFomo(); setInterval(showFomo,12000); },5000);
+
+/* ─── UTM TRACKING BÁSICO ─────────────────────────────────── */
+const urlParams=new URLSearchParams(window.location.search);
+const utmSource=urlParams.get('utm_source')||'directo';
+document.querySelectorAll('a[id^="cta-"]').forEach(a=>{
+  a.addEventListener('click',()=>{
+    if(typeof gtag!=='undefined') gtag('event','cta_click',{cta_id:a.id,source:utmSource});
+  });
+});
+</script>
+</body>
+</html>
